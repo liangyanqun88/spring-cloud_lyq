@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  cloud:
+    config:
+      server:
+        svn:
+          uri: https://192.168.8.233:8443/svn/p2p/p2p_v2/web/trunk/jrl_pc_3.0/config-repo
+          username: yaozizhong
+          password: yaozizhong@123
+        default-label: trunk
+  profiles:
+    active: subversion
+  application:
+    name: spring-cloud-config-server
